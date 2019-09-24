@@ -8,7 +8,7 @@ class AaronResumeContents {
 
   static ResumeContent current = ResumeContent(
     name: "Aaron Junod",
-    email: "aaron@junod.dev",
+    email: "tranqy@gmail.com",
     github: "tranqy",
     twitter: "tranqy",
     linkedIn: "aaronjunod",

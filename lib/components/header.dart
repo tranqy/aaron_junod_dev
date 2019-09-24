@@ -20,26 +20,20 @@ class Header extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Padding(
-            padding: const EdgeInsets.only(top: 16, bottom: 8),
+            padding: const EdgeInsets.only(top: 16, bottom: 8,),
             child: Row(
               children: <Widget>[
-                Spacer(
-                  flex: 1,
+                Expanded(
+                  flex: 2,
+                  child: ProfileImage(),
                 ),
-                ProfileImage(),
-                Spacer(
-                  flex: 1,
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 4, bottom: 4),
+                Expanded(
+                  flex: 8,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[HeaderProfileHeadline(resumeContent: resumeContent), ContactIcons(resumeContent: resumeContent)],
                   ),
-                ),
-                Spacer(
-                  flex: 20,
-                ),
+                )
               ],
             ),
           ),

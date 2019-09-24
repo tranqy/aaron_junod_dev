@@ -38,16 +38,13 @@ class ContactIcons extends StatelessWidget {
               String url = "http://twitter.com/${resumeContent.twitter}";
               _launchURL(url);
             }),
-        FlatButton(
-          onPressed: () {
+        IconButton(
+            // Use the FontAwesomeIcons class for the IconData
+            color: Colors.white54,
+            icon: new Icon(FontAwesomeIcons.envelope),
+            onPressed: () {
             _launchURL("mailto:${resumeContent.email}");
-          },
-          child: Text(resumeContent.email,
-              style: TextStyle(
-                  color: Colors.white54,
-                  fontSize: 15.0,
-                  fontWeight: FontWeight.w400)),
-        )
+            }),
       ],
     );
   }

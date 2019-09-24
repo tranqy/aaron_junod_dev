@@ -17,26 +17,38 @@ class Position extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
-            Text(
-              resumePosition.organization,
-              style: theme.textTheme.headline,
+            Expanded(
+              flex: 7,
+              child: Text(
+                resumePosition.organization,
+                style: theme.textTheme.headline,
+              ),
             ),
-            Text(
-              " " + resumePosition.location,
-              style: theme.textTheme.subhead.copyWith(color: Colors.black26),
+            Expanded(
+              flex: 2,
+              child: Text(
+                " " + resumePosition.location,
+                style: theme.textTheme.subhead.copyWith(color: Colors.black26),
+              ),
             )
           ],
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
-            Text(
-              resumePosition.title,
-              style: theme.textTheme.subhead,
+            Expanded(
+              flex: 7,
+              child: Text(
+                resumePosition.title,
+                style: theme.textTheme.subhead,
+              ),
             ),
-            Text(
-              resumePosition.dates,
-              style: theme.textTheme.subhead.copyWith(color: theme.accentColor),
+            Expanded(
+              flex: 2,
+              child: Text(
+                resumePosition.dates,
+                style: theme.textTheme.subhead.copyWith(color: theme.accentColor),
+              ),
             )
           ],
         ),
