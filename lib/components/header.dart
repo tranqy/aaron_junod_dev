@@ -17,14 +17,15 @@ class Header extends StatelessWidget {
     return Container(
       color: Theme.of(context).primaryColor,
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.start,
+        
         children: <Widget>[
           Padding(
             padding: const EdgeInsets.only(top: 16, bottom: 8,),
             child: Row(
               children: <Widget>[
                 Expanded(
-                  flex: 2,
+                  flex: 1,
                   child: ProfileImage(),
                 ),
                 Expanded(
